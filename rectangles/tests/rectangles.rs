@@ -87,7 +87,6 @@ fn unit_square() {
 }
 
 #[test]
-#[ignore]
 fn test_incomplete_rectangles() {
     #[rustfmt::skip]
     let lines = &[
@@ -140,7 +139,6 @@ fn test_large_input_with_many_rectangles() {
 }
 
 #[test]
-#[ignore]
 fn test_three_rectangles_no_shared_parts() {
     #[rustfmt::skip]
     let lines = &[
