@@ -43,7 +43,6 @@ pub fn count(lines: &[&str]) -> u32 {
                 }
 
                 while j < each_line_plus_indices.len() {
-                    //
                     let j_plus_index = &each_line_plus_indices[j];
                     // if there is a disjoint like `+  +` between two + then they can't make a like
                     // so skip them
@@ -68,8 +67,6 @@ pub fn count(lines: &[&str]) -> u32 {
                             break;
                         }
                     }
-                    //
-                    // let j_plus_index = &each_line_plus_indices[j];
                     each_line_limpings_index_pairs
                         .push(format!("{}{}", i_plus_index, j_plus_index));
                     j += 1;
